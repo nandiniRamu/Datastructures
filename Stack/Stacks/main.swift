@@ -18,7 +18,11 @@ repeat {
 print ("Stack Operations")
 print("--------------------")
 print("1.Push", "2.Pop","3.Display", "4.Exit", separator:"\n", terminator : "\n")
-   
+if let t = readLine()
+{
+ if let ch = Int (t)
+ {
+    choice = ch
     switch choice
     {
     case 1:
@@ -44,10 +48,16 @@ print("1.Push", "2.Pop","3.Display", "4.Exit", separator:"\n", terminator : "\n"
     default:
         print("Invalid option")
     }
-    
+}
+ else {
+    print ("option can be integer from 1 to 4, try again")
+    choice = -1
+    }
+}
+else {
+    print ("invalid input, try again")
+    choice = -1
+}
 }while choice != 4
-
-
-
 
 

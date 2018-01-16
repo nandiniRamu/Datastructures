@@ -43,6 +43,7 @@ class Stack<T> {
     }
     func display(){
         var i = top
+        print("Stack items")
         while i >= 0
         {
           print("\( nodes[i]!.data!)")
